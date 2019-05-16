@@ -801,15 +801,15 @@ namespace cryptonote
     switch (std::atomic_load(&default_decimal_point))
     {
       case 12:
-        return "monero";
+        return "tokl";
       case 9:
-        return "millinero";
+        return "millitokl";
       case 6:
-        return "micronero";
+        return "microtokl";
       case 3:
-        return "nanonero";
+        return "nanotokl";
       case 0:
-        return "piconero";
+        return "picotokl";
       default:
         ASSERT_MES_AND_THROW("Invalid decimal point specification: " << default_decimal_point);
     }
